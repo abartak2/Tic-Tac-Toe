@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link href="tictactoe.css" rel="stylesheet" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+    <!-- create headers -->
+        <h1 id="Tic Tac Toe">Tic Tac Toe</h1>
+
+        <h3 class="alert alert-primary hidden" id= "It is Player X Turn">It is Player X Turn</h3>
+        <h3 class="alert alert-primary hidden" id= "It is Player O Turn">It is Player O Turn</h3>
+        
+    <!-- create the board and style with borders -->
+    <div id="board">
+        <div class="cell right-border bottom-border" data-index="0"></div>
+        <div class="cell right-border bottom-border" data-index="1"></div>
+        <div class="cell bottom-border" data-index="2"></div>
+        <div class="cell right-border bottom-border" data-index="3"></div>
+        <div class="cell right-border bottom-border" data-index="4"></div>
+        <div class="cell bottom-border" data-index="5"></div>
+        <div class="cell right-border" data-index="6"></div>
+        <div class="cell right-border" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+        <!-- create a box to pop in and alert the winner, contains a clear button to restart the game -->
+    </div> 
+    <!-- <div class="turn"></div> -->
+    <div id="win-alert" class="hidden">
+            <h2 id="declareWinner" class="alert alert-primary" role="alert">X is the Winner!</h2>
+            <button id="clear">Clear</button>
+            <!-- <input type="button" id="clear" value="Clear" onClick="document.location.reload.true"> -->
+        </div>
+    <!-- </div> -->
+<!-- </div> -->
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="tictactoe.js"></script>
+
+</body>
+</html>
